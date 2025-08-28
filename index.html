@@ -17,6 +17,27 @@
     a.btn{display:inline-block;padding:10px 14px;border-radius:8px;background:#0d47a1;color:#fff;text-decoration:none;font-weight:600}
     footer{margin-top:18px;color:#64748b;font-size:13px}
     @media(max-width:720px){.grid{grid-template-columns:1fr}}
+
+    /* WhatsApp Floating Icon */
+    .whatsapp-icon {
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      width:60px;
+      height:60px;
+      background:#25D366;
+      border-radius:50%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      box-shadow:0 2px 6px rgba(0,0,0,0.3);
+      z-index:1000;
+      cursor:pointer;
+    }
+    .whatsapp-icon img {
+      width:32px;
+      height:32px;
+    }
   </style>
 </head>
 <body>
@@ -62,5 +83,11 @@
       Contact / Apply via WhatsApp: <a href="https://wa.me/919893540547">+91 98935 40547</a>
     </footer>
   </div>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/919893540547" target="_blank" class="whatsapp-icon">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Chat">
+  </a>
+
 </body>
 </html>
