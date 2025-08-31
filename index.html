@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Indori wealthvibe solutions pvt ltd — Credit Card DSA</title>
-<meta name="description" content="Indori wealthvibe solutions pvt ltd — Trusted DSA partner for HDFC and other banks. Compare & apply for credit cards." />
+<title>Card India — Credit Card DSA</title>
+<meta name="description" content="Card India — Trusted DSA partner for HDFC and other banks. Compare & apply for credit cards." />
 <style>
 /* ===== Base ===== */
 body {
@@ -33,9 +33,61 @@ header {
   z-index: 999;
 }
 
-header h2 { margin:0; font-size:20px; }
-nav a { margin-left: 20px; color: #fff; font-weight:600; transition: color 0.2s ease; }
-nav a:hover { color: #ffe082; }
+/* Logo text */
+.brand {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.logo-text {
+  background: linear-gradient(45deg, #ff6f61, #ffcc00, #4caf50, #2196f3, #9c27b0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.highlight {
+  font-weight: 800;
+}
+
+.menu-icon {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* ===== Side Menu ===== */
+.side-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #0d47a1;
+  overflow-x: hidden;
+  transition: 0.4s;
+  padding-top: 60px;
+  z-index: 2000;
+}
+
+.side-menu a {
+  padding: 14px 28px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-menu a:hover {
+  background: #1976d2;
+}
+
+.side-menu .closebtn {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+}
 
 /* ===== Hero / Poster ===== */
 .hero {
@@ -161,8 +213,6 @@ footer {
 /* ===== Responsive ===== */
 @media(max-width:720px){
   .grid { grid-template-columns:1fr; }
-  nav a { margin-left:12px; font-size:14px; }
-  header h2 { font-size:18px; }
 }
 </style>
 </head>
@@ -170,14 +220,21 @@ footer {
 
 <!-- Header / Navigation -->
 <header>
-  <h2>Indori WealthVibe</h2>
-  <nav>
-    <a href="#hero">Home</a>
-    <a href="#contact">Contact</a>
-    <a href="#quicklinks">Quick Links</a>
-    <a href="#pdf">PDF</a>
-  </nav>
+  <div class="brand">
+    <span class="logo-text">Card <span class="highlight">India</span></span>
+  </div>
+  <div class="menu-icon" onclick="openMenu()">&#9776;</div>
 </header>
+
+<!-- Side Menu -->
+<div id="sideMenu" class="side-menu">
+  <span class="closebtn" onclick="closeMenu()">&times;</span>
+  <a href="#hero">Home</a>
+  <a href="#contact">Contact</a>
+  <a href="#quicklinks">Quick Links</a>
+  <a href="#pdf">PDF</a>
+  <a href="#about">About</a>
+</div>
 
 <!-- Hero Section -->
 <div class="hero" id="hero">
@@ -204,16 +261,16 @@ footer {
 
   <div class="card" id="quicklinks">
     <h3>Quick Links</h3>
-    <p><a href="https://applyonline.hdfcbank.com/cards/credit-cards.html?utm_content=DGPI&amp;Channel=DSA&amp;DSACode=XRKD&amp;SMCode=N11931&amp;LGCode=DGPI&amp;LCCode=SID62&amp;LC2=SID62#nbb" target="_blank">
+    <p><a href="https://applyonline.hdfcbank.com/cards/credit-cards.html" target="_blank">
       <span class="blink-emoji">👉</span> Apply Now — HDFC Online (TATA CARD)</a></p>
-    <p><a href="https://applyonline.hdfcbank.com/cards/credit-cards.html?utm_content=DGPI&amp;Channel=DSA&amp;DSACode=XRKD&amp;SMCode=N11931&amp;LGCode=DGPI&amp;LCCode=SID62&amp;LC2=SID62#nbb" target="_blank">
+    <p><a href="https://applyonline.hdfcbank.com/cards/credit-cards.html" target="_blank">
       <span class="blink-emoji">👉</span> Apply Now — HDFC BASE CARD</a></p>
     <p id="pdf"><a class="btn" href="brochure.pdf" target="_blank">📄 Download Benefits PDF</a></p>
   </div>
 </div>
 
 <!-- Card Categories -->
-<section>
+<section id="about">
   <h3>Card Categories (Sample)</h3>
   <ul>
     <li><strong>Travel / Hotel Benefits</strong> — Travel perks, lounge access, welcome bonuses (see PDF)</li>
@@ -225,7 +282,7 @@ footer {
 
 <!-- Footer -->
 <footer>
-  © Indori wealthvibe solutions pvt ltd — DSA Partner for HDFC. DSA Code: XRKD<br/>
+  © Card India — DSA Partner for HDFC. DSA Code: XRKD<br/>
   Contact / Apply via WhatsApp: <a href="https://wa.me/917470894420" style="color:#fff; font-weight:600;">+91 74708 94420</a>
 </footer>
 
@@ -238,6 +295,15 @@ footer {
 <a href="https://wa.me/917470894420" target="_blank" class="whatsapp-icon">
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Chat">
 </a>
+
+<script>
+function openMenu() {
+  document.getElementById("sideMenu").style.width = "250px";
+}
+function closeMenu() {
+  document.getElementById("sideMenu").style.width = "0";
+}
+</script>
 
 </body>
 </html>
