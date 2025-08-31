@@ -129,13 +129,16 @@ a.btn:hover { background: linear-gradient(135deg, #0747a1, #115293); transform: 
 @keyframes blink { from { opacity: 1; } to { opacity: 0.3; } }
 @keyframes bounce { 0%,100%{transform:translateX(0);}50%{transform:translateX(6px);} }
 
-/* 👉 Poster Slide Animation */
+/* 👉 Poster Slide Animation on Scroll */
 .poster-slide {
   opacity: 0;
   transform: translateX(-100%);
-  animation: slideIn 1.2s ease-out forwards;
+  transition: all 1s ease-out;
 }
-@keyframes slideIn { to { opacity: 1; transform: translateX(0); } }
+.poster-slide.show {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 /* ===== Card Categories ===== */
 section {
@@ -278,6 +281,19 @@ function openMenu() {
 function closeMenu() {
   document.getElementById("sideMenu").style.width = "0";
 }
+
+/* Scroll animation for poster.png1.jpg */
+document.addEventListener("scroll", () => {
+  const poster = document.querySelector(".poster-slide");
+  if (poster) {
+    const rect = poster.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      poster.classList.add("show");
+    } else {
+      poster.classList.remove("show"); // remove to re-trigger when scrolling again
+    }
+  }
+});
 </script>
 
 </body>
