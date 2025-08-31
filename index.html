@@ -154,13 +154,13 @@ section ul li { margin-bottom:10px; line-height:1.6; }
 
 /* ===== Footer ===== */
 footer {
-  margin-top: 28px;
+  margin-top: 0;
   color: #fff;
   font-size:14px;
   background: linear-gradient(135deg, #0d47a1, #1976d2);
   padding:14px 20px;
-  border-radius:0 0 14px 14px;
   text-align:center;
+  border-radius: 0;
 }
 
 /* ===== WhatsApp Floating Icon ===== */
@@ -253,11 +253,6 @@ footer {
   </ul>
 </section>
 
-<!-- Footer -->
-<footer>
-  <p>© Card India — All Rights Reserved</p>
-</footer>
-
 <!-- Poster at the very bottom -->
 <div style="text-align:center; margin:20px 0;">
   <img src="poster.png0.jpg" alt="Last Poster" style="max-width:100%; height:auto; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.2);" />
@@ -268,6 +263,11 @@ footer {
   Contact / Apply via WhatsApp: 
   <a href="https://wa.me/917470894420" style="color:#fff; font-weight:700;">+91 74708 94420</a>
 </div>
+
+<!-- Footer -->
+<footer>
+  <p>© Card India — All Rights Reserved</p>
+</footer>
 
 <!-- WhatsApp Floating Button -->
 <a href="https://wa.me/917470894420" target="_blank" class="whatsapp-icon">
@@ -290,7 +290,7 @@ document.addEventListener("scroll", () => {
     if (rect.top < window.innerHeight - 100) {
       poster.classList.add("show");
     } else {
-      poster.classList.remove("show"); // remove to re-trigger when scrolling again
+      poster.classList.remove("show");
     }
   }
 });
