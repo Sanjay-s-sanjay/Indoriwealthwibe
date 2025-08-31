@@ -1,230 +1,218 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Indori wealthvibe solutions pvt ltd — Credit Card DSA</title>
-  <meta name="description" content="Indori wealthvibe solutions pvt ltd — Trusted DSA partner for HDFC and other banks. Compare & apply for credit cards." />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Indori wealthvibe solutions pvt ltd — Credit Card DSA</title>
+<meta name="description" content="Indori wealthvibe solutions pvt ltd — Trusted DSA partner for HDFC and other banks. Compare & apply for credit cards." />
+<style>
+/* ===== Base ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #e3f2fd, #f0f4f8);
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  color: #0f172a;
+}
 
-  <style>
-    /* ===== Base ===== */
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #e3f2fd, #f0f4f8);
-      margin: 0;
-      padding: 0;
-      scroll-behavior: smooth;
-      color: #0f172a;
-    }
+a { text-decoration: none; }
 
-    a { text-decoration: none; }
+/* ===== Header / Nav ===== */
+header {
+  background: linear-gradient(90deg, #0d47a1, #1976d2);
+  color: #fff;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 14px 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
 
-    /* ===== Header / Nav ===== */
-    header {
-      background: linear-gradient(90deg, #0d47a1, #1976d2);
-      color: #fff;
-      padding: 12px 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-radius: 0 0 14px 14px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
+header h2 { margin:0; font-size:20px; }
+nav a { margin-left: 20px; color: #fff; font-weight:600; transition: color 0.2s ease; }
+nav a:hover { color: #ffe082; }
 
-    header h2 {
-      margin: 0;
-      font-size: 20px;
-    }
+/* ===== Hero / Poster ===== */
+.hero {
+  max-width: 950px;
+  margin: 28px auto;
+  padding: 24px;
+  background: #ffffffcc;
+  border-radius: 14px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+  text-align: center;
+}
 
-    nav a {
-      margin-left: 20px;
-      color: #fff;
-      font-weight: 600;
-      transition: color 0.2s ease;
-    }
+.hero img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+  margin-bottom: 20px;
+}
 
-    nav a:hover { color: #ffe082; }
+.hero p { font-size:18px; color:#475569; margin:0; }
 
-    /* ===== Hero / Poster ===== */
-    .hero {
-      max-width: 950px;
-      margin: 28px auto;
-      padding: 24px;
-      background: #ffffffcc;
-      border-radius: 14px;
-      box-shadow: 0 10px 28px rgba(0,0,0,0.08);
-      text-align: center;
-    }
+/* ===== Cards ===== */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 950px;
+  margin: 28px auto;
+}
 
-    .hero img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 14px;
-      box-shadow: 0 8px 22px rgba(0,0,0,0.12);
-      margin-bottom: 20px;
-    }
+.card {
+  border-radius: 14px;
+  padding: 22px;
+  background: linear-gradient(135deg, #bae6fd, #e0f2fe);
+  border: 1px solid #38bdf8;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
 
-    .hero p {
-      font-size: 18px;
-      color: #475569;
-      margin: 0;
-    }
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.15);
+}
 
-    /* ===== Cards ===== */
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      max-width: 950px;
-      margin: 28px auto;
-    }
+.card h3 { color: #0369a1; margin-bottom: 14px; }
 
-    .card {
-      border-radius: 14px;
-      padding: 22px;
-      background: linear-gradient(135deg, #bae6fd, #e0f2fe);
-      border: 1px solid #38bdf8;
-      box-shadow: 0 8px 22px rgba(0,0,0,0.1);
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-    }
+.card a { color:#0c4a6e; font-weight:600; }
+.card a:hover { color:#ff6f00; }
 
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 14px 30px rgba(0,0,0,0.15);
-    }
+a.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #0d47a1, #1976d2);
+  color: #fff;
+  font-weight: 600;
+  margin-top: 14px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
 
-    .card h3 {
-      color: #0369a1;
-      margin-bottom: 14px;
-    }
+a.btn:hover { background: linear-gradient(135deg, #0747a1, #115293); transform: translateY(-2px); }
 
-    .card a {
-      color: #0c4a6e;
-    }
+/* ===== Card Categories ===== */
+section {
+  max-width: 950px;
+  margin: 28px auto;
+  padding: 20px;
+  background: #ffffffcc;
+  border-radius: 14px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+}
 
-    a.btn {
-      display: inline-block;
-      padding: 12px 20px;
-      border-radius: 10px;
-      background: linear-gradient(135deg, #0d47a1, #1976d2);
-      color: #fff;
-      font-weight: 600;
-      margin-top: 14px;
-      transition: background 0.3s ease, transform 0.2s ease;
-    }
+section h3 { color:#0d47a1; margin-bottom:14px; }
+section ul li { margin-bottom:10px; line-height:1.6; }
 
-    a.btn:hover {
-      background: linear-gradient(135deg, #0747a1, #115293);
-      transform: translateY(-2px);
-    }
+/* ===== Footer ===== */
+footer {
+  margin-top: 28px;
+  color: #fff;
+  font-size:14px;
+  background: linear-gradient(135deg, #0d47a1, #1976d2);
+  padding:14px 20px;
+  border-radius:0 0 14px 14px;
+  text-align:center;
+}
 
-    /* ===== Card Categories ===== */
-    section {
-      max-width: 950px;
-      margin: 28px auto;
-      padding: 20px;
-      background: #ffffffcc;
-      border-radius: 14px;
-      box-shadow: 0 10px 28px rgba(0,0,0,0.08);
-    }
+/* ===== WhatsApp Floating Icon ===== */
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  border-radius: 50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  box-shadow:0 4px 12px rgba(0,0,0,0.3);
+  z-index:1000;
+  cursor:pointer;
+  transition: transform 0.2s ease;
+}
 
-    section h3 {
-      color: #0d47a1;
-      margin-bottom: 14px;
-    }
+.whatsapp-icon:hover { transform: scale(1.1); }
+.whatsapp-icon img { width:32px; height:32px; }
 
-    section ul li {
-      margin-bottom: 10px;
-      line-height: 1.6;
-    }
-
-    /* ===== Footer ===== */
-    footer {
-      margin-top: 28px;
-      color: #fff;
-      font-size: 14px;
-      background: linear-gradient(135deg, #0d47a1, #1976d2);
-      padding: 14px 20px;
-      border-radius: 0 0 14px 14px;
-      text-align: center;
-    }
-
-    /* ===== WhatsApp Floating Icon ===== */
-    .whatsapp-icon {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      width: 60px;
-      height: 60px;
-      background: #25D366;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      z-index: 1000;
-      cursor: pointer;
-      transition: transform 0.2s ease;
-    }
-
-    .whatsapp-icon:hover { transform: scale(1.1); }
-
-    .whatsapp-icon img { width: 32px; height: 32px; }
-
-    /* ===== Responsive ===== */
-    @media(max-width: 720px) {
-      .grid { grid-template-columns: 1fr; }
-      nav a { margin-left: 12px; font-size: 14px; }
-      header h2 { font-size: 18px; }
-    }
-
-  </style>
+/* ===== Responsive ===== */
+@media(max-width:720px){
+  .grid { grid-template-columns:1fr; }
+  nav a { margin-left:12px; font-size:14px; }
+  header h2 { font-size:18px; }
+}
+</style>
 </head>
 <body>
 
-  <!-- Header / Navigation -->
-  <header>
-    <h2>Indori WealthVibe</h2>
-    <nav>
-      <a href="#hero">Home</a>
-      <a href="#contact">Contact</a>
-      <a href="#quicklinks">Quick Links</a>
-      <a href="#pdf">PDF</a>
-    </nav>
-  </header>
+<!-- Header / Navigation -->
+<header>
+  <h2>Indori WealthVibe</h2>
+  <nav>
+    <a href="#hero">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="#quicklinks">Quick Links</a>
+    <a href="#pdf">PDF</a>
+  </nav>
+</header>
 
-  <!-- Hero Section -->
-  <div class="hero" id="hero">
-    <img src="poster.png" alt="Credit Card Poster">
-    <p>Trusted DSA partner for HDFC — compare card families and apply online or via WhatsApp.</p>
+<!-- Hero Section -->
+<div class="hero" id="hero">
+  <img src="poster.png" alt="Credit Card Poster">
+  <p>Trusted DSA partner for HDFC — compare card families and apply online or via WhatsApp.</p>
+</div>
+
+<!-- Cards Section -->
+<div class="grid">
+  <div class="card" id="contact">
+    <h3>Contact</h3>
+    <p>Founder: <strong>Manish Choudhary</strong><br/>
+    Office: <strong>9, 2nd floor, Old Palasia Square, Palasia Thana, Indore, 452018</strong><br/>
+    WhatsApp / Apply: <a href="https://wa.me/917470894420" target="_blank">+91 74708 94420</a><br/>
+    Email: <a href="mailto:info@wealthvibesolutions.com">info@wealthvibesolutions.com</a></p>
+    <p><a class="btn" href="https://wa.me/917470894420" target="_blank">Message on WhatsApp</a></p>
   </div>
 
-  <!-- Cards Section -->
-  <div class="grid">
-    <div class="card" id="contact">
-      <h3>Contact</h3>
-      <p>Founder: <strong>Manish Choudhary</strong><br/>
-      Office: <strong>9, 2nd floor, Old Palasia Square, Palasia Thana, Indore, 452018</strong><br/>
-      WhatsApp / Apply: <a href="https://wa.me/917470894420" target="_blank">+91 74708 94420</a><br/>
-      Email: <a href="mailto:info@wealthvibesolutions.com">info@wealthvibesolutions.com</a></p>
-      <p><a class="btn" href="https://wa.me/917470894420" target="_blank">Message on WhatsApp</a></p>
-    </div>
-
-    <div class="card" id="quicklinks">
-      <h3>Quick Links</h3>
-      <p><a href="https://applyonline.hdfcbank.com/cards/credit-cards.html?utm_content=DGPI&amp;Channel=DSA&amp;DSACode=XRKD&amp;SMCode=N11931&amp;LGCode=DGPI&amp;LCCode=SID62&amp;LC2=SID62#nbb" target="_blank">
-        Apply Now — HDFC Online (TATA CARD)</a></p>
-      <p><a href="https://applyonline.hdfcbank.com/cards/credit-cards.html?utm_content=DGPI&amp;Channel=DSA&amp;DSACode=XRKD&amp;SMCode=N11931&amp;LGCode=DGPI&amp;LCCode=SID62&amp;LC2=SID62#nbb" target="_blank">
-        Apply Now — HDFC BASE CARD</a></p>
-      <p id="pdf"><a class="btn" href="brochure.pdf" target="_blank">Download Benefits PDF</a></p>
-    </div>
+  <div class="card" id="quicklinks">
+    <h3>Quick Links</h3>
+    <p><a href="https://applyonline.hdfcbank.com/cards/credit-cards.html?utm_content=DGPI&amp;Channel=DSA&amp;DSACode=XRKD&amp;SMCode=N11931&amp;LGCode=DGPI&amp;LCCode=SID62&amp;LC2=SID62#nbb" target="_blank">
+      Apply Now — HDFC Online (TATA CARD)</a></p>
+    <p><a href="https://applyonline.hdfcbank.com/cards/credit-cards.html?utm_content=DGPI&amp;Channel=DSA&amp;DSACode=XRKD&amp;SMCode=N11931&amp;LGCode=DGPI&amp;LCCode=SID62&amp;LC2=SID62#nbb" target="_blank">
+      Apply Now — HDFC BASE CARD</a></p>
+    <p id="pdf"><a class="btn" href="brochure.pdf" target="_blank">Download Benefits PDF</a></p>
   </div>
+</div>
 
-  <!-- Card Categories -->
-  <section>
-    <h3>Card Categories (Sample)</h3>
-    <ul>
-      <li><strong>Travel / Hotel Benefits</strong> — Travel perks,
+<!-- Card Categories -->
+<section>
+  <h3>Card Categories (Sample)</h3>
+  <ul>
+    <li><strong>Travel / Hotel Benefits</strong> — Travel perks, lounge access, welcome bonuses (see PDF)</li>
+    <li><strong>Business Moneyback / Biz First / Biz Grow / Biz Power / Biz Black</strong> — Corporate spend focus (see PDF)</li>
+    <li><strong>Small Business Moneyback</strong> — SME cashback & incentives (see PDF)</li>
+    <li><strong>Business Regalia</strong> — Premium business travel card (see PDF)</li>
+  </ul>
+</section>
+
+<!-- Footer -->
+<footer>
+  © Indori wealthvibe solutions pvt ltd — DSA Partner for HDFC. DSA Code: XRKD<br/>
+  Contact / Apply via WhatsApp: <a href="https://wa.me/917470894420" style="color:#fff; font-weight:600;">+91 74708 94420</a>
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/917470894420" target="_blank" class="whatsapp-icon">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Chat">
+</a>
+
+</body>
+</html>
