@@ -99,6 +99,20 @@ a.btn {
 
 a.btn:hover { background: linear-gradient(135deg, #0747a1, #115293); transform: translateY(-2px); }
 
+/* 👉 Blinking Animation for Apply Now */
+.blink-emoji {
+  display: inline-block;
+  animation: blink 1s infinite alternate, bounce 1.5s infinite;
+}
+@keyframes blink {
+  from { opacity: 1; }
+  to { opacity: 0.3; }
+}
+@keyframes bounce {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(6px); }
+}
+
 /* ===== Card Categories ===== */
 section {
   max-width: 950px;
@@ -191,10 +205,10 @@ footer {
   <div class="card" id="quicklinks">
     <h3>Quick Links</h3>
     <p><a href="https://applyonline.hdfcbank.com/cards/credit-cards.html?utm_content=DGPI&amp;Channel=DSA&amp;DSACode=XRKD&amp;SMCode=N11931&amp;LGCode=DGPI&amp;LCCode=SID62&amp;LC2=SID62#nbb" target="_blank">
-      Apply Now — HDFC Online (TATA CARD)</a></p>
+      <span class="blink-emoji">👉</span> Apply Now — HDFC Online (TATA CARD)</a></p>
     <p><a href="https://applyonline.hdfcbank.com/cards/credit-cards.html?utm_content=DGPI&amp;Channel=DSA&amp;DSACode=XRKD&amp;SMCode=N11931&amp;LGCode=DGPI&amp;LCCode=SID62&amp;LC2=SID62#nbb" target="_blank">
-      Apply Now — HDFC BASE CARD</a></p>
-    <p id="pdf"><a class="btn" href="brochure.pdf" target="_blank">Download Benefits PDF</a></p>
+      <span class="blink-emoji">👉</span> Apply Now — HDFC BASE CARD</a></p>
+    <p id="pdf"><a class="btn" href="brochure.pdf" target="_blank">📄 Download Benefits PDF</a></p>
   </div>
 </div>
 
